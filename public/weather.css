@@ -1,0 +1,131 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to right,rgb(70, 70, 243),rgb(142, 245, 142));
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#main {
+    margin:100px auto;
+    background-color: ghostwhite;
+    height:600px;
+    width:450px;
+    border-radius: 11px;
+    border-color:white;
+    box-shadow: 0px 2px 5px lightgray;
+}
+#Input {
+    padding:20px 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+#Input input {
+    padding: 8px 12px;
+    width: 260px;
+    border: 1px solid #d1d5db;
+    border-radius: 22px;
+    outline: none;
+    background: #fff;
+    color: #222;
+    font-size: 15px;
+
+    transition: border-color 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+
+#Input input:hover {
+    border-color: #9ca3af;
+}
+
+
+#Input input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.12);
+}
+
+
+#Input input::placeholder {
+    color: #9ca3af;
+}
+
+#Input button {
+    padding: 8px 16px;
+    border:none;
+    background-color: black;
+    color:white;
+    border-radius: 22px;
+    cursor: pointer;
+}
+#Input button:hover {
+    background-color: #007bff;
+    background: #007bff;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}
+#Input button:active {
+    transform: scale(0.95);
+}
+
+
+#output {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.Card {
+    margin-top: 25px;
+    padding:25px 10px;
+    background-color: white;
+    color:black;
+    font-size: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px lightgray;
+    flex: 0 0 calc(50% - 10px);
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 0;
+}
+
+#weatherIcon {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+}
+
+#weatherCondition {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+#icon{
+    height:100px;
+    width:300px;
+    text-align: center;
+    padding:8px 12px;
+}
+
+
+@media (max-width: 450px) {
+    #output {
+        gap: 12px;
+    }
+
+    .Card {
+        flex-basis: calc(50% - 6px);
+        padding: 20px 5px;
+    }
+}

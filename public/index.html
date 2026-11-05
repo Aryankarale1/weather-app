@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather site</title>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+<body>
+    <div id="main">
+        <div id="Input">
+            <input placeholder="Type Cityname..." id="Cityname" type="text">
+            <button onclick="findWeather()">Search</button>
+        </div>
+        <div id="output">
+        <div id="icon">
+            <img id="weatherIcon" src="" alt="Weather">
+            <h2 id="weatherCondition">Weather condition</h2>
+        </div>
+        
+
+        <div class="Card">22°C</div>
+        <div class="Card" id="humidity">Humidity</div>
+
+        <div class="Card" id="wind">Wind Speed</div>
+
+        <div class="Card" id="uv">UV Index</div>
+        <div class="Card" id="pressure">Pressure</div>
+        <div class="Card" id="visibility">Visibility</div>
+        </div>
+    </div>
+</body>
+<script src="./weather.js"></script>
+</html>
